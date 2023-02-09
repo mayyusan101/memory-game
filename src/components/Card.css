@@ -1,0 +1,62 @@
+body{
+  background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+.card__wrapper{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    max-width: 800px;
+}
+.card__heading h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.card__heading button{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(38, 38, 205);
+    color:#fff;
+    cursor: pointer;
+}
+.turn{
+    font-size: 1.5rem;
+    color:#fff;
+}
+.turn span{
+    color:palevioletred
+}
+.card{
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+ /* font of the picture */
+.card .front{
+    position: absolute;
+    transition: all ease-in 0.2s;
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+/* hide the picture */
+.flipped .front{
+    transform: rotateY(0);
+    transition-delay: 0.2s;
+}
+/* back of the card */
+.card .back{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+.flipped .back{
+   transform: rotateY(90deg);
+   transition-delay: 0s;
+}
+
+
